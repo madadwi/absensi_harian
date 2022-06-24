@@ -1,0 +1,81 @@
+.home-page {
+    top: 64px;
+    left: 300px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.haritanggal{
+    color: white;
+    font-size: 27px;
+    text-shadow: -1px 0px 1px grey, 0px 1px 1px black;
+    background-image: radial-gradient(purple, black);
+    padding: 2px 20px 0px 22px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 10px black;
+    border: 2px solid white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.clock ul, .clock li, .haritanggal ul, .haritanggal li{
+    list-style: none;
+    display: inline-block;
+}
+.clock{
+    color: white;
+    font-size: 27px;
+    text-shadow: -1px 0px 1px grey, 0px 1px 1px black;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-image: radial-gradient(purple, black);
+    padding: 2px 80px 0px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -1px 1px 10px black;
+    border: 2px solid white;
+    border-right: none;
+}
+
+.cek-absen h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 120px;
+}
+
+.cek-absen button {
+    color: grey;
+    font-size: 25px;
+    text-shadow: 1px 1px 3px black;
+    background-image: radial-gradient(purple, black);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: .5s;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.cek-absen button:hover {
+    transform: scale(1.03);
+    color: cyan;
+    border: 2px solid cyan;
+}
+
+.copyright {
+    color: purple;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: black;
+    padding: 10px 50px 10px 50%;
+    border-top-left-radius: 50px;
+    text-shadow: 0px 1px 1px grey;
+    border-top: 2px solid white;
+    box-shadow: -1px 0px 10px black;
+}

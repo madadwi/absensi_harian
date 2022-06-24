@@ -1,0 +1,61 @@
+.absen-page {
+    top: 64px;
+    left: 300px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.search-bar {
+    background-image: radial-gradient(purple, black);
+    width: 240px;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+.search-bar .search {
+    background-color: transparent;
+    border: none;
+    outline: none !important;
+    border-radius: 10px;
+}
+.search::-webkit-input-placeholder {
+    color: whitesmoke;
+}
+
+.sort-bar {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+.sort-bar select{
+    background-color: transparent;
+    border: none;
+}
+.sort-bar option {
+    background-color: black;
+}
+
+.table-content table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: lightgrey;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+    border: 3px solid white;
+}
+.table-content th {
+    background-image: radial-gradient(purple, black);
+}
+.table-content th, .table-content td {
+    border: 1px solid white;
+    padding: 5px 0px;
+}
+.table-content td {
+    color: black;
+    border: 1px solid #585858;
+    font-weight: 900;
+}

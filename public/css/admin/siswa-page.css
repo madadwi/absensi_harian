@@ -1,0 +1,156 @@
+.siswa-page {
+    top: 64px;
+    left: 300px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.search-bar {
+    background-image: radial-gradient(purple, black);
+    width: 240px;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+
+.search-bar .search {
+    background-color: transparent;
+    border: none;
+    outline: none !important;
+    border-radius: 10px;
+}
+
+.search::-webkit-input-placeholder {
+    color: whitesmoke;
+}
+
+.tambah-siswa button {
+    color: white;
+    background-image: radial-gradient(purple, black);
+    font-weight: bold;
+    padding: 8px 10px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px black;
+    transition: .5s;
+}
+
+.tambah-siswa button:hover {
+    transform: scale(1.04);
+    opacity: .8;
+}
+
+.table-content table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: lightgrey;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+    border: 3px solid white;
+}
+
+.table-content th,
+.table-content td {
+    border: 1px solid white;
+    padding: 5px 0px;
+}
+
+.table-content th {
+    background-image: radial-gradient(purple, black);
+}
+
+.table-content td {
+    color: black;
+    border: 1px solid #585858;
+    font-weight: 900;
+}
+
+.table-content .foto-siswa {
+    padding: 5px;
+}
+
+.table-content .foto-siswa img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    transition: .5s;
+    max-height: 120px;
+}
+
+.table-content .foto-siswa img:hover {
+    filter: brightness(.7);
+    transform: scale(1.04);
+}
+
+/* .btn-aksi .fa-edit, .btn-aksi .fa-trash {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    transition: .5s;
+    color: white;
+}
+.btn-aksi .fa-edit:hover, .btn-aksi .fa-trash:hover {
+    transform: scale(1.03);
+    filter: brightness(.8);
+    background-color: purple;
+}
+
+.btn-aksi .fa-trash {
+    background-color: rgb(255, 66, 66);
+    padding: 8px 10px;
+}
+
+.btn-aksi .fa-edit {
+    background-color: rgb(96, 207, 96);
+    padding: 8px 4px 8px 10px;
+    margin-bottom: 10px;
+} */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    text-align: center;
+    transition: .7s ease-in-out;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.overlay img {
+    max-height: 100%;
+    width: auto;
+    box-shadow: 0px 0px 15px black;
+}
+
+.overlay:target img {
+    animation: zoom 1s;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

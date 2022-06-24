@@ -1,0 +1,116 @@
+.content-nav::-webkit-scrollbar {
+    display: none;
+}
+.side-navbar {
+    background-image: linear-gradient(black, purple);
+    width: 300px;
+    color: grey;
+    box-shadow: 3px 0px 10px black;
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    /* overflow-y: auto;
+    overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+}
+.profile-pict {
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    padding-top: 30px;
+}
+.picture img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px white;
+    transition: .5s ease-in-out;
+}
+.picture img:hover {
+    opacity: .7;
+    transform: scale(1.04);
+}
+.profile-pict h1 {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+.content-nav {
+    border-top : 2px solid white;
+    border-top-right-radius: 50px;
+    background-color: black;
+    height: 100%;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+}
+.content-nav ul {
+    font-size: 20px;
+    margin: 30px 0;
+}
+.content-nav li {
+    padding: 15px 0px 15px 20px;
+    transition: .5s;
+}
+.content-nav li:hover{
+    background-image: radial-gradient(purple, black);
+    box-shadow: 0px 0px 5px white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+    margin-top: -20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    text-align: center;
+    transition: .7s ease-in-out;
+    padding: 100px 0;
+}
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+.overlay img {
+    max-height: 100%;
+    width: auto;
+    box-shadow: 0px 0px 15px black;
+}
+.overlay:target img {
+    animation : zoom 1s;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.overlay a {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    animation: zoom 1s;
+}

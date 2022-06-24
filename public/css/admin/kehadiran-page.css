@@ -1,0 +1,69 @@
+.kehadiran-page {
+    top: 64px;
+    left: 300px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.search-bar {
+    background-image: radial-gradient(purple, black);
+    width: 240px;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+.search-bar .search {
+    background-color: transparent;
+    border: none; 
+    outline: none !important;
+    border-radius: 10px;
+}
+.search::-webkit-input-placeholder {
+    color: whitesmoke;
+}
+
+.haritanggal{
+    color: white;
+    font-size: 25px;
+    text-shadow: -1px 0px 1px grey, 0px 1px 1px black;
+    background-image: radial-gradient(purple, black);
+    padding: 2px 20px 0px 22px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 10px black;
+    border: 2px solid white;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+.haritanggal ul, .haritanggal li{
+    list-style: none;
+    display: inline-block;
+}
+
+.table-content table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: lightgrey;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+    border: 3px solid white;
+}
+.table-content th, .table-content td {   
+    border: 1px solid white;
+    padding: 5px 0px;
+}
+.table-content td {
+    color: black;
+    border: 1px solid #585858;
+    font-weight: 900;
+}
+.table-content .th1 {
+    background-color: black;
+}
+.table-content .th2 {
+    background-image: radial-gradient(purple, black);
+}
